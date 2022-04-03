@@ -15,7 +15,8 @@ setup(
     name="Scarab", 
     version=get_version(),
     packages=["scarab"],
-    install_requires = [
+    install_requires=[
        "falcon",
+       "jinja2",
     ]
 )
