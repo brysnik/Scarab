@@ -35,4 +35,4 @@ def get_template(name) -> 'Template':
 
 
 def render_template(name) -> str:
-    return Jinja.load(name).render()
+    return get_template(name).render()
