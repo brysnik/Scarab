@@ -2,6 +2,7 @@ import typing
 from pathlib import Path
 
 from jinja2 import Environment, PackageLoader, select_autoescape
+from .. import templates
 
 if typing.TYPE_CHECKING:
     from jinja2 import Template
@@ -18,7 +19,7 @@ class Jinja:
             cls._env = Environment(
                 loader=PackageLoader(
                     "scarab.web.templates",
-                    package_path=str(Path(__file__).parent.parent / "templates")
+                    package_path=str(Path(templates.__file__).parent)
                 ),
                 autoescape=select_autoescape(['html', 'xml'])
             )
