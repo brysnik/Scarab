@@ -1,5 +1,7 @@
 from scarab import scarab
 
+from conftest import TESTS_DIR
+
 
 def test_main():
-    assert scarab.main() == 0
+    assert scarab.main([str(TESTS_DIR / "testdata" / "example_task.py")]) == 0

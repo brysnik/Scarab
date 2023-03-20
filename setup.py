@@ -16,7 +16,7 @@ setup(
     version=get_version(),
     packages=["scarab"],
     install_requires=[
-       "falcon",
+       "FastAPI",
        "jinja2",
     ]
 )
