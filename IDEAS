@@ -1,8 +1,0 @@
-
-1. websocket communication for status pages - encrypted and signed for more security. That way it should be dynamic and event driven.
-2. handover strategies - pipelines enables to send workspace to different node. New node instance first tries to find best possible option to proceed with workspace data handover by looking for it on filesystem (assuming it is common for both nodes), then sends it over the network. It should be possible to implement additional handover strategies for instance with use of some proxy server of sort.
-3. status pages uses bootstrap as default css
-4. spinner on status page describing job changes color when job fails (red), test fails (yellow), passes (green)
-5. nodes are defined by context managers?
-6. Every keyword has status serving thread that sends data to websocket channel (if non there is generic status generator based - probably just spinner and nothing more)
-7.	
