@@ -1,6 +1,6 @@
 # Scarab
 
-POC of distriburted  build system
+POC of distriburted autoamtion system
 
 ### Scarab main principles:
 
@@ -10,4 +10,4 @@ POC of distriburted  build system
 
 ### Basics of design
 
-Scarab backend is coded in Rust to provide as much performance as possible. Automation pipelines are using python to run to simplify and speed up development.  
+Scarab backend is coded in Rust to provide as much performance as possible. Automation pipelines are using python to run to simplify and speed up development.
